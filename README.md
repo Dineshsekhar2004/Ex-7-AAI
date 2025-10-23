@@ -1,26 +1,29 @@
-<H3>NAME:DINESH S</H3>
-<H3>REGISTER NO:212222230033</H3>
-<H3>EX. NO.7</H3>
-<H3>DATE:</H3>
+<H3>NAME: S V SHADHANASHREE </H3>
+<H3>REGISTER NO: 212223230202</H3>
+<H3>EX.NO:7</H3>
 <H1 ALIGN =CENTER>Implementation of Text  Summarization</H1>
 
-## Aim: 
-To perform automatic text summarization using Natural Language Processing (NLP) techniques.
-
-## Algorithm:
-Step 1 Import necessary libraries for natural language processing tasks.<BR>
-Step 2: Download NLTK resources, including the punkt tokenizer and stopwords.<BR>
-Step 3: Define Text Preprocessing Function to tokenize, remove stopwords, and perform stemming.<BR>
-Step 4: Define the Text Summarization Function using a simple frequency-based approach.<br>
+## AIM:
+To perform automatic text summarization using Natural Language Processing (NLP) techniques. 
+## ALGORITHM:
+### STEP 1:
+Import necessary libraries for natural language processing tasks.
+### STEP 2:
+Download NLTK resources, including the punkt tokenizer and stopwords.
+### STEP 3:
+Define Text Preprocessing Function to tokenize, remove stopwords, and perform stemming.
+### STEP 4:
+Define the Text Summarization Function using a simple frequency-based approach.<br>
     - Calculate the frequency of each word in the preprocessed text.<br>
     - Calculate a score for each sentence based on the sum of word frequencies.<br>
     - Select the top N sentences with the highest scores to form the summary.<br>
-Step 5: Construct the main program to read the paragraph  and perform text summarization<br>
-      - Generate and print the original text.<br>
+### STEP 5:
+Construct the main program to read the paragraph  and perform text summarization.<br>
+    - Generate and print the original text.<br>
       - Generate and print the text summary using the  Text Summarization function<br>
-      
-## Program:
-```
+
+## PROGRAM:
+```python
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize,sent_tokenize
@@ -37,11 +40,11 @@ def preprocess_text(text):
 
 	# Stemming
 	stemmer = PorterStemmer()
-        stemmed_words= [stemmer. stem(word) for word in filtered_words]
+
+	stemmed_words= [stemmer. stem(word) for word in filtered_words]
 	return stemmed_words
 
 def generate_summary(text,num_sentences=3):
-
 	sentences= sent_tokenize(text)
 	preprocessed_text = preprocess_text(text)
 	# Calculate the frequency of each word
@@ -74,7 +77,9 @@ print( " \nSummary : " )
 print(summary)
 
 ```
-## Output:
-![Screenshot 2024-11-02 105614](https://github.com/user-attachments/assets/f854fb76-3d93-49a1-a393-9e103ec155ed)
-## Result:
-Thus ,the program to perform the Text summarization is executed sucessfully.
+
+## OUTPUT:
+![378373973-3111ac20-21ce-4a50-a0c0-6d6924ce7004](https://github.com/user-attachments/assets/51920968-d7de-413a-852c-f73a020d42f2)
+
+## RESULT:
+Thus, the program to perform the Text summarization is executed successfully.
